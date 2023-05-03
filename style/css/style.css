@@ -1,0 +1,183 @@
+* {
+    background-color: rgb(169, 203, 247);
+  }
+
+.intro,.intro1 {
+    background-color: yellow;
+  }
+
+  #firstname {
+    background-color:red;
+  }
+
+  p {
+    background-color: rgb(248, 123, 246);
+  }
+
+  p.intro3 {
+    background-color: rgb(0, 255, 229);
+  }
+  
+  div > p {
+    background-color: rgb(130, 130, 112);
+  }
+  
+  div + p {
+    background-color: rgb(255, 0, 13);
+  }
+  p ~ ul {
+    background: #00ff37 ;
+  }
+  
+  a[target] {
+    background-color: rgb(0, 94, 255);
+    color: aliceblue;
+  }
+
+   a[target="_blank"] {
+    background-color: yellow;
+    color: red;
+  }
+
+  [title~="flower"] {
+    border: 5px solid rgb(255, 0, 0);
+  }
+  
+  [lang|="en"] {
+    background: yellow;
+  }
+  
+
+  div[class^="test"] {
+    background: #1900ff;
+  }
+  
+  div[class$="te"] {
+    background: #00eeff;
+  }
+  
+  div[class*="do"] {
+    background: #00ff22;
+  }
+
+  a:active {
+    background-color: yellow;
+  }
+
+  .ff p::after { 
+    content: " - Remember this";
+  }
+
+  .ff p::before {
+    content: "Read this: ";
+  }
+  input:checked {
+    height: 50px;
+    width: 50px;
+  }
+  input:default {
+    box-shadow: 0 0 1px 1px red;
+  }
+  input[type=text]:disabled {
+    background: #dddddd;
+  }
+
+  input[type=text]:enabled {
+    background: #ffff00;
+  }
+  
+      
+  p:empty {
+    width: 100px;
+    height: 20px;
+    background: #ff0000;
+  }
+  
+  .gg p:first-child {
+    background-color: rgb(255, 0, 89);
+  }
+  
+
+  .gg p::first-letter {
+    font-size: 200%;
+    color: #8A2BE2;
+  }
+
+  .hh p::first-line {
+    background-color: rgb(234, 0, 255);
+  }
+  
+  .jj p:first-of-type {
+    background: red;
+  }
+  
+
+  .kk input:focus {
+    background-color: rgb(0, 255, 68);
+  }
+  
+
+  /* Safari syntax */
+:-webkit-full-screen {
+  background-color: yellow;
+}
+
+/* IE11 syntax */
+:-ms-fullscreen {
+  background-color: yellow;
+}
+
+/* Standard syntax */
+:fullscreen {
+  background-color: yellow;
+}
+
+/* Style the button */
+button {
+  padding: 20px;
+  font-size: 20px;
+}
+a:hover {
+  background-color: rgb(0, 255, 242);
+}
+input:in-range {
+  border: 2px solid yellow;
+}
+input:indeterminate {
+  box-shadow: 0 0 1px 1px red;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+p:lang(it) { 
+  background: rgb(104, 95, 159);
+}
+.ll p:last-child {
+  background: #ff0000;
+}
+  
+::marker { 
+  color: red;
+}
+.ll :not(p) {
+  color: #ff0000;
+}
+
+.zz div:nth-child(2) {
+  background: red;
+}
+
+/* Selects the second li element in a list */
+.zz li:nth-child(2) {
+  background: lightgreen;
+}
+
+/* Selects every third element among any group of siblings */
+.zz :nth-child(3) {
+  background: yellow;
+}
+
+.xx p:nth-last-child(2) {
+  background: rgb(225, 0, 255);
+} 
